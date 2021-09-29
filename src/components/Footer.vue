@@ -2,10 +2,23 @@
   <div>
     <div class="top">
       <div class="container">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eum
-        tenetur laborum, ipsam officia delectus? Laudantium est eos libero
-        soluta, perspiciatis recusandae, sit deleniti laboriosam adipisci,
-        ratione assumenda iure provident!
+        <div class="row">
+          <div class="col row">
+            <div class="col">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+            <div class="col">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+            <div class="col">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+            <div class="col">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+          <div class="col img"></div>
+        </div>
       </div>
     </div>
     <div class="bottom">
