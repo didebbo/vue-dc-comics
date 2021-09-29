@@ -1,11 +1,9 @@
 <template>
   <header>
     <div class="container">
-      <div class="logo">
-        <a href="#">
-          <img src="images/dc-logo.png" alt="DC Logo" />
-        </a>
-      </div>
+      <a class="logo" href="#">
+        <img src="images/dc-logo.png" alt="DC Logo" />
+      </a>
       <nav>
         <ul>
           <li
