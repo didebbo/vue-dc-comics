@@ -6,8 +6,8 @@
         <h2>Current Series</h2>
       </div>
       <Cards :array="cards" colls="6" />
-      <div class="btn-load-more">
-        <h2>Load More</h2>
+      <div class="load-more">
+        <h3>Load More</h3>
       </div>
     </div>
   </div>
@@ -128,6 +128,15 @@ export default {
       position: relative;
       top: -2em;
       @include blue-shape;
+    }
+    .load-more {
+      text-align: center;
+      padding: 2em 0;
+      h3 {
+        display: inline-block;
+        @include blue-shape;
+        padding: 0.5em 4em;
+      }
     }
   }
 }
