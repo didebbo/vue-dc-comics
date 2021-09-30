@@ -1,20 +1,100 @@
 <template>
-  <div>
+  <footer>
     <div class="top">
       <div class="container">
         <div class="row">
           <div class="col row">
             <div class="col">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <div class="title">Dc Comics</div>
+              <ul>
+                <li>
+                  <a href="#">Characters</a>
+                </li>
+                <li>
+                  <a href="#">Movies</a>
+                </li>
+                <li>
+                  <a href="#">TV</a>
+                </li>
+                <li>
+                  <a href="#">Games</a>
+                </li>
+                <li>
+                  <a href="#">Video</a>
+                </li>
+                <li>
+                  <a href="#">News</a>
+                </li>
+              </ul>
             </div>
             <div class="col">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <div class="title">Dc Comics</div>
+              <ul>
+                <li>
+                  <a href="#">Characters</a>
+                </li>
+                <li>
+                  <a href="#">Movies</a>
+                </li>
+                <li>
+                  <a href="#">TV</a>
+                </li>
+                <li>
+                  <a href="#">Games</a>
+                </li>
+                <li>
+                  <a href="#">Video</a>
+                </li>
+                <li>
+                  <a href="#">News</a>
+                </li>
+              </ul>
             </div>
             <div class="col">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <div class="title">Dc Comics</div>
+              <ul>
+                <li>
+                  <a href="#">Characters</a>
+                </li>
+                <li>
+                  <a href="#">Movies</a>
+                </li>
+                <li>
+                  <a href="#">TV</a>
+                </li>
+                <li>
+                  <a href="#">Games</a>
+                </li>
+                <li>
+                  <a href="#">Video</a>
+                </li>
+                <li>
+                  <a href="#">News</a>
+                </li>
+              </ul>
             </div>
             <div class="col">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <div class="title">Dc Comics</div>
+              <ul>
+                <li>
+                  <a href="#">Characters</a>
+                </li>
+                <li>
+                  <a href="#">Movies</a>
+                </li>
+                <li>
+                  <a href="#">TV</a>
+                </li>
+                <li>
+                  <a href="#">Games</a>
+                </li>
+                <li>
+                  <a href="#">Video</a>
+                </li>
+                <li>
+                  <a href="#">News</a>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="col img"></div>
@@ -29,7 +109,7 @@
         voluptatibus eveniet perferendis deleniti.
       </div>
     </div>
-  </div>
+  </footer>
 </template>
 
 <script>
@@ -41,28 +121,45 @@ export default {
 <style scoped lang="scss">
 @import "../scss/vars";
 
-div {
+footer {
   .top {
     color: $white-color;
     background-color: $grey-color;
     background-image: url("/images/footer-bg.jpg");
 
     .container {
-      .row {
+      > .row {
         display: flex;
 
         .row {
-          width: 40%;
           display: flex;
           flex-wrap: wrap;
+          padding: 1em 0;
 
           .col {
             width: (100% / 3);
             padding: 0.8em;
+
+            .title {
+              font-weight: bold;
+              font-size: 1.2em;
+            }
+
+            ul {
+              li {
+                a {
+                  text-decoration: none;
+                  color: $white-color;
+                  opacity: 0.6;
+                  text-transform: none;
+                }
+              }
+            }
           }
         }
 
         .img {
+          margin: 0 10em;
           flex-grow: 1;
           background-image: url("/images/dc-logo-bg.png");
           background-size: cover;
