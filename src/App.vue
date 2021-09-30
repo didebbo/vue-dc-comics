@@ -22,7 +22,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/scss/vars";
 @import "@/scss/reset";
 @import "@/scss/common";
 </style>
