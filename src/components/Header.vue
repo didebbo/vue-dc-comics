@@ -107,7 +107,7 @@ header {
       li {
         display: flex;
         align-items: center;
-        margin: $hm-8;
+        margin: 0 0.8em;
 
         &.active {
           position: relative;

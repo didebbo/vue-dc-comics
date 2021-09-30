@@ -16,7 +16,7 @@ export default {
 @import "@/scss/vars";
 
 div {
-  padding: $vp-8;
+  padding: 0.8em 0;
   background-color: $secondary-color;
   color: $white-color;
 }
