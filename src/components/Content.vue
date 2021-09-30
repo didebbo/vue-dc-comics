@@ -13,5 +13,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/scss/sections/content";
+@import "@/scss/vars";
+
+div {
+  padding: $vp-8;
+  background-color: $secondary-color;
+  color: $white-color;
+}
 </style>

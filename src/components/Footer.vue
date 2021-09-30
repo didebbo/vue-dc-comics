@@ -39,5 +39,44 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/scss/sections/footer";
+@import "@/scss/vars";
+
+div {
+  .top {
+    color: $white-color;
+    background-color: $grey-color;
+    background-image: url("/images/footer-bg.jpg");
+    border: 0.2em solid red;
+
+    .container {
+      .row {
+        display: flex;
+
+        .row {
+          width: 40%;
+          display: flex;
+          flex-wrap: wrap;
+
+          .col {
+            width: (100% / 3);
+            padding: 0.8em;
+          }
+        }
+
+        .img {
+          flex-grow: 1;
+          background-image: url("/images/dc-logo-bg.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    color: $white-color;
+    background-color: $grey-color;
+  }
+}
 </style>

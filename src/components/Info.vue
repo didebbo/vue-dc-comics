@@ -44,5 +44,34 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/scss/sections/info";
+@import "@/scss/vars";
+
+div {
+  background-color: $primary-color;
+  color: $white-color;
+
+  .container {
+    ul {
+      padding: 2em 0;
+      display: flex;
+      justify-content: center;
+
+      li {
+        padding: 0 0.8em;
+        display: flex;
+        align-items: center;
+
+        img {
+          height: 2.5em;
+        }
+
+        p {
+          padding: 0 0.8em;
+          text-transform: uppercase;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
 </style>

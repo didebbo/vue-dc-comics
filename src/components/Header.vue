@@ -82,5 +82,60 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/scss/sections/header";
+@import "@/scss/vars";
+
+header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+      padding: 0.8em 0;
+      display: flex;
+
+      img {
+        height: 4em;
+      }
+    }
+  }
+
+  nav {
+    display: flex;
+    ul {
+      display: flex;
+
+      li {
+        display: flex;
+        align-items: center;
+        margin: $hm-8;
+
+        &.active {
+          position: relative;
+
+          a {
+            color: $primary-color;
+          }
+
+          &::after {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 100%;
+            height: 0.2em;
+            bottom: 0;
+            background-color: $primary-color;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          font-weight: 700;
+          font-size: 1.1em;
+          text-transform: uppercase;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
 </style>
