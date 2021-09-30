@@ -22,7 +22,6 @@ export default {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  padding: 2em 0;
 
   .card {
     display: flex;

@@ -1,8 +1,14 @@
 <template>
-  <div>
+  <div class="content">
     <Hero src="/images/jumbotron.jpg" alt="Jumbotron" height="20em" />
     <div class="container">
+      <div class="title">
+        <h2>Current Series</h2>
+      </div>
       <Cards :array="cards" colls="6" />
+      <div class="btn-load-more">
+        <h2>Load More</h2>
+      </div>
     </div>
   </div>
 </template>
@@ -113,8 +119,16 @@ export default {
 <style scoped lang="scss">
 @import "@/scss/vars";
 
-div {
+.content {
   background-color: $secondary-color;
   color: $white-color;
+
+  .container {
+    .title {
+      position: relative;
+      top: -2em;
+      @include blue-shape;
+    }
+  }
 }
 </style>

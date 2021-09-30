@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="hero">
     <img :src="src" :alt="alt" :style="`height:${height}`" />
   </div>
 </template>
@@ -12,9 +12,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-div {
+.hero {
+  display: flex;
   width: 100%;
-  //   height: 400px;
 
   img {
     width: 100%;
