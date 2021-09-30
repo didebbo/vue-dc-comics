@@ -2,18 +2,20 @@
   <div>
     <Hero src="/images/jumbotron.jpg" alt="Jumbotron" height="20em" />
     <div class="container">
-      <h2>Content goes here!</h2>
+      <Cards :array="cards" colls="6" />
     </div>
   </div>
 </template>
 
 <script>
 import Hero from "@/components/Hero.vue";
+import Cards from "@/components/Cards.vue";
 
 export default {
   name: "Content",
   components: {
     Hero,
+    Cards,
   },
   data() {
     return {
