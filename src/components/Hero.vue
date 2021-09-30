@@ -12,7 +12,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../scss/vars";
 .hero {
+  position: relative;
   display: flex;
   width: 100%;
 
@@ -21,6 +23,18 @@ export default {
     height: 100%;
     object-fit: cover;
     object-position: top center;
+  }
+
+  &:after {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: $primary-color;
+    opacity: 0.4;
   }
 }
 </style>
