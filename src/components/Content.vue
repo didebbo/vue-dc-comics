@@ -14,8 +14,8 @@
 </template>
 
 <script>
-import Hero from "@/components/Hero.vue";
-import Cards from "@/components/Cards.vue";
+import Hero from "./Hero.vue";
+import Cards from "./Cards.vue";
 
 export default {
   name: "Content",
@@ -117,7 +117,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/scss/vars";
+@import "../scss/vars";
 
 .content {
   background-color: $secondary-color;

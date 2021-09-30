@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Content from "@/components/Content.vue";
-import Info from "@/components/Info.vue";
+import Content from "./Content.vue";
+import Info from "./Info.vue";
 
 export default {
   name: "Main",
