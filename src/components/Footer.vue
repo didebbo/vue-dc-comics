@@ -152,6 +152,10 @@ footer {
                   color: $white-color;
                   opacity: 0.6;
                   text-transform: none;
+
+                  &:hover {
+                    text-decoration: underline;
+                  }
                 }
               }
             }
