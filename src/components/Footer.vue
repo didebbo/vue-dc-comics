@@ -46,7 +46,6 @@ div {
     color: $white-color;
     background-color: $grey-color;
     background-image: url("/images/footer-bg.jpg");
-    border: 0.2em solid red;
 
     .container {
       .row {
