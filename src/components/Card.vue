@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card" :style="`width: calc(100% / ${colls})`">
     <div class="thumb">
       <a href="#">
         <img :src="card.thumb" :alt="card.series" />
@@ -13,7 +13,7 @@
 <script>
 export default {
   name: "Card",
-  props: ["card"],
+  props: ["card", "colls"],
 };
 </script>
 
@@ -23,7 +23,7 @@ export default {
 .card {
   display: flex;
   flex-direction: column;
-  width: (100% / 6);
+  // width: (100% / 6);
   padding: 1em;
 
   .thumb {

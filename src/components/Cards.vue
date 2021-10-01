@@ -1,6 +1,6 @@
 <template>
   <div class="cards">
-    <Card v-for="(card, index) in array" :key="index" :card="card" />
+    <Card v-for="(card, index) in array" :key="index" :card="card" colls="6" />
   </div>
 </template>
 
@@ -9,7 +9,7 @@ import Card from "./Card.vue";
 
 export default {
   name: "Cards",
-  props: ["array", "colls"],
+  props: ["array"],
   components: {
     Card,
   },

@@ -5,7 +5,7 @@
       <div class="title">
         <h2>Current Series</h2>
       </div>
-      <Cards :array="cards" colls="6" />
+      <Cards :array="cards" />
       <div class="load-more">
         <a href="#">
           <h3>Load More</h3>
