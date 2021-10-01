@@ -12,7 +12,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../scss/vars";
+@import "../scss/libs";
 .hero {
   position: relative;
   display: flex;

@@ -1,11 +1,13 @@
 <template>
   <div class="card">
     <div class="thumb">
-      <img :src="card.thumb" :alt="card.series" />
+      <a href="#">
+        <img :src="card.thumb" :alt="card.series" />
+      </a>
     </div>
-    <p>
+    <a href="#">
       {{ card.series }}
-    </p>
+    </a>
   </div>
 </template>
 <script>
@@ -16,6 +18,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../scss/libs";
+
 .card {
   display: flex;
   flex-direction: column;
@@ -23,17 +27,23 @@ export default {
   padding: 1em;
 
   .thumb {
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
+    a {
+      display: flex;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
     }
   }
 
-  p {
+  a {
     margin-top: 0.5em;
     text-transform: uppercase;
+    text-decoration: none;
+    color: $white-color;
   }
 }
 </style>

@@ -7,14 +7,16 @@
       </div>
       <Cards :array="cards" colls="6" />
       <div class="load-more">
-        <h3>Load More</h3>
+        <a href="#">
+          <h3>Load More</h3>
+        </a>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import jsonCards from "./dc-comics.json";
+import jsonCards from "../json/dc-comics.json";
 import Hero from "./Hero.vue";
 import Cards from "./Cards.vue";
 
@@ -29,18 +31,11 @@ export default {
       cards: jsonCards,
     };
   },
-  methods: {
-    getCards() {
-      fetch("weather.json")
-        .then((response) => response.json())
-        .then((data) => (this.weatherDataList = data));
-    },
-  },
 };
 </script>
 
 <style scoped lang="scss">
-@import "../scss/vars";
+@import "../scss/libs";
 
 .content {
   background-color: $secondary-color;
@@ -59,6 +54,7 @@ export default {
         display: inline-block;
         @include blue-shape;
         padding: 0.5em 4em;
+        color: $white-color;
       }
     }
   }

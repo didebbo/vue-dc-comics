@@ -119,7 +119,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../scss/vars";
+@import "../scss/libs";
 
 footer {
   .top {

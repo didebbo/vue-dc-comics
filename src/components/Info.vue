@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../scss/vars";
+@import "../scss/libs";
 
 div {
   background-color: $primary-color;
