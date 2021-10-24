@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <Hero src="/images/jumbotron.jpg" alt="Jumbotron" height="20em" />
+    <Hero src="./images/jumbotron.jpg" alt="Jumbotron" height="20em" />
     <div class="container">
       <div class="title">
         <h2>Current Series</h2>
